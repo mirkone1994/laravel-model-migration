@@ -14,9 +14,9 @@ class UpdateTravelsTable extends Migration
     public function up()
     {
         Schema::table('travels', function (Blueprint $table) {
-            $table->text("description");
-            $table->tinyInteger("duration");
-            $table->foreignId("id_transport");
+            $table->text('description');
+            $table->tinyInteger('duration');
+            $table->foreignId('id_transport');
         });
     }
 
